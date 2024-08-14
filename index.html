@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="board" id="board">
+        <div class="list" draggable="true">
+            <h3>To Do</h3>
+            <div class="card" draggable="true">Meeting with USA Client</div>
+            <div class="card" draggable="true">Meeting with UK Client</div>
+            <div class="card" draggable="true">Meeting with UAE Client</div>
+            <div class="add-card" onclick="addCard(this)">+ Add a card</div>
+        </div>
+        <div class="list" draggable="true">
+            <h3>Doing</h3>
+            <div class="card" draggable="true">Preparations for Meeting</div>
+            <div class="add-card" onclick="addCard(this)">+ Add a card</div>
+        </div>
+        <div class="list" draggable="true">
+            <h3>Done</h3>
+            <div class="card" draggable="true">Project planning</div>
+            <div class="card" draggable="true">Kickoff meeting</div>
+            <div class="add-card" onclick="addCard(this)">+ Add a card</div>
+        </div>
+        <div class="add-list" onclick="addList()">+ Add another list</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
